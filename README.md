@@ -235,18 +235,8 @@ Each notebook searches for its corresponding CSV in the task folder or project r
 - Engineering interpretable ratios and screening multicollinearity with VIF.
 - Interpreting model coefficients cautiously and documenting data and evaluation limitations.
 
-## Future Improvements
-
-- For Iris, remove or explicitly investigate the duplicate record, and evaluate model stability with repeated stratified cross-validation.
-- For housing, compare nonlinear and spatially aware models, while retaining a final untouched test set.
-- Report cross-validation variability and prediction intervals, and investigate errors by geographic region and target-value range.
-- Record dataset provenance, license, and exact environment versions for reproducibility.
-- If intended for practical use, validate against recent, representative data and assess fairness, drift, and operational requirements before deployment.
-
 ## Conclusion
 
 Together, the notebooks demonstrate two different supervised learning workflows: a balanced multiclass classification problem and a larger, mixed-feature regression problem. The Iris models tie at 0.933 accuracy on one 30-row test set. In the housing experiment, engineered-feature OLS has the lowest RMSE among six tested candidates, but its approximately $70,309 RMSE and capped area-level target make clear that the result is exploratory rather than a precise individual-home estimate.
 
-## Internship Acknowledgement
 
-These notebooks were completed as part of a Data Science Internship. The repository does not include an organization, mentor, or program name, so none is attributed here. I appreciate the opportunity to apply data analysis and machine learning methods to these two practical learning tasks.
